@@ -28,7 +28,7 @@ form {
     border: 0.3px solid rgb(233, 228, 228);
 }
 
-.error_style{
+.error_style {
     border-color: var(--Red);
 }
 
@@ -39,6 +39,7 @@ input::placeholder {
 input:focus {
     outline: .5px solid hsl(278, 94%, 30%);
 }
+
 input:focus.error_style {
     outline: none;
 }
@@ -96,25 +97,25 @@ button {
     display: none;
 }
 
-@media (max-width:1200px){
+@media (max-width:1200px) {
     form {
         max-width: 385px;
         margin-left: 0px;
     }
 }
 
-
-
-@media(max-width:600px){
+@media(max-width:600px) {
     form {
         margin: -80px 20px 45px 20px;
-       
     }
 }
-@media (max-width:440px){
+
+@media (max-width:440px) {
     form {
         max-width: unset;
         margin: -90px 20px 45px 20px;
-       
+    }
+    form.with_error{
+        padding-top: 60px;
     }
 }

@@ -12,7 +12,6 @@ const Container = () => {
     const [cardholderNumber, setCardholderNumber] = useState('0000 0000 0000 0000');
     const [cardholderMonth, setCardholderMonth] = useState('00');
     const [cardholderYear, setCardholderYear] = useState('00');
-
     const [cardSecurity, setCardSecurity] = useState('000');
 
     const handleNameChange = (newName) => {
