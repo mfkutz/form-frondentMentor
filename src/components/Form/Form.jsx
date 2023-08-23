@@ -175,7 +175,7 @@ const Form = ({ onNameChange, onNumberChange, onMonthChange, onYearChange, onPin
                             placeholder='e.g. Jane Appleseed'
                             name=""
                             id=""
-                            className='input_name input_style'
+                            className={`input_name input_style ${nameError ? 'error_style' : ''} `}
 
                             value={name}
                             onChange={handleNameChange}
@@ -196,7 +196,7 @@ const Form = ({ onNameChange, onNumberChange, onMonthChange, onYearChange, onPin
                             placeholder='e.g. 1234 5678 9123 0000 '
                             name=""
                             id=""
-                            className='input_number input_style'
+                            className={`input_number input_style ${numberCardError ? 'error_style' : ''}  ${numberCardError2 ? 'error_style' : ''} `}
 
                             value={number}
                             onChange={handleNumberChange}
@@ -225,7 +225,7 @@ const Form = ({ onNameChange, onNumberChange, onMonthChange, onYearChange, onPin
                                     <input
                                         type="text"
                                         placeholder='MM'
-                                        className='input_month input_style'
+                                        className={`input_month input_style ${monthError ? 'error_style' : ''}`}
 
                                         value={month}
                                         onChange={handleMonthChange}
@@ -244,7 +244,7 @@ const Form = ({ onNameChange, onNumberChange, onMonthChange, onYearChange, onPin
                                     <input
                                         type="text"
                                         placeholder='YY'
-                                        className='input_year input_style'
+                                        className={`input_year input_style ${yearError ? 'error_style' : ''} `}
 
                                         value={year}
                                         onChange={handleYearChange}
@@ -267,7 +267,7 @@ const Form = ({ onNameChange, onNumberChange, onMonthChange, onYearChange, onPin
                             <input
                                 type="text"
                                 placeholder='e.g. 123'
-                                className='security input_style'
+                                className={`security input_style ${securePin ? 'error_style' : ''} `}
 
 
                                 value={secure}

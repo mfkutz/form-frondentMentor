@@ -1,5 +1,4 @@
 form {
-    /* background: red; */
     display: flex;
     flex-direction: column;
     max-width: 385px;
@@ -29,12 +28,19 @@ form {
     border: 0.3px solid rgb(233, 228, 228);
 }
 
+.error_style{
+    border-color: var(--Red);
+}
+
 input::placeholder {
     color: rgb(209, 208, 208);
 }
 
 input:focus {
     outline: .5px solid hsl(278, 94%, 30%);
+}
+input:focus.error_style {
+    outline: none;
 }
 
 input {
@@ -56,7 +62,6 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .exp_sec_container {
     display: flex;
-    /* background: yellow; */
     gap: 20px;
 }
 
