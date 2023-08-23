@@ -1,0 +1,115 @@
+form {
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    max-width: 385px;
+    margin-left: 130px;
+}
+
+.title_style {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding-bottom: 8px;
+    padding-top: 25px;
+    color: var(--Very-dark-violet);
+    font-weight: 600;
+}
+
+.input_style {
+    display: flex;
+    width: 100%;
+    padding: 11px 10px 11px 15px;
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--Very-dark-violet);
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: 1px;
+    border: 0.3px solid rgb(233, 228, 228);
+}
+
+input::placeholder {
+    color: rgb(209, 208, 208);
+}
+
+input:focus {
+    outline: .5px solid hsl(278, 94%, 30%);
+}
+
+input {
+    border-style: 1px solid red;
+}
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.day_year {
+    display: flex;
+    gap: 10px;
+}
+
+.exp_sec_container {
+    display: flex;
+    /* background: yellow; */
+    gap: 20px;
+}
+
+.input_month {
+    width: 80px;
+}
+
+.input_year {
+    width: 80px;
+}
+
+button {
+    background: var(--Very-dark-violet);
+    color: white;
+    padding: 14px;
+    border-radius: 8px;
+    margin-top: 38px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-family: 'Space Grotesk', sans-serif;
+    border: none;
+
+}
+
+.incorrect_date {
+    color: var(--Red);
+    font-size: 10px;
+    padding-top: 8px;
+}
+
+.disabled {
+    display: none;
+}
+
+@media (max-width:1200px){
+    form {
+        max-width: 385px;
+        margin-left: 0px;
+    }
+}
+
+
+
+@media(max-width:600px){
+    form {
+        margin: -80px 20px 45px 20px;
+       
+    }
+}
+@media (max-width:440px){
+    form {
+        max-width: unset;
+        margin: -90px 20px 45px 20px;
+       
+    }
+}

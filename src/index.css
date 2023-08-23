@@ -1,0 +1,27 @@
+:root {
+  /* ### Primary */
+  --Linear-gradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+  --Red: hsl(0, 100%, 66%);
+
+  /* ### Neutral */
+  --White: hsl(0, 0%, 100%);
+  --Light-grayish-violet: hsl(270, 3%, 87%);
+  --Dark-grayish-violet: hsl(279, 6%, 55%);
+  --Very-dark-violet: hsl(278, 68%, 11%);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+
+}
+
+html,
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}

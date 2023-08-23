@@ -1,0 +1,25 @@
+.back_card {
+    position: relative;
+}
+
+.secure {
+    color: #FFF;
+    font-size: 14px;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 110px;
+    right: 50px;
+}
+
+@media(max-width:720px){
+    .bg_back_card{
+        width: 286px;
+    }
+    .secure {
+        position: absolute;
+        font-size: 10px;
+        top: 70px;
+        right: 33px;
+    }
+    
+}

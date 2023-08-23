@@ -1,0 +1,41 @@
+.sent_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 100px;
+}
+
+.sent_container h2 {
+    text-transform: uppercase;
+    font-size: 28px;
+    letter-spacing: 4px;
+    font-weight: 400;
+    padding-top: 40px;
+    margin: 0;
+}
+
+.sent_container p {
+    color: var(--Dark-grayish-violet);
+    font-size: 18px;
+    margin: 0;
+    padding-top: 12px;
+}
+
+.btn_complete {
+    width: 380px;
+    margin-top: 45px;
+}
+
+@media (max-width:1200px) {
+    .sent_container {
+        padding-left: 0;
+    }
+
+}
+
+@media (max-width:440px) {
+    .btn_complete {
+        width: 100%;
+        margin-top: 45px;
+    }
+}
